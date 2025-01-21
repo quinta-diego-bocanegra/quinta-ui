@@ -1,6 +1,6 @@
 import { TireStyles } from "../components/UnitLayout/ComponenteLlanta";
 import ComponenteCaja from "../components/UnitLayout/ComponenteCaja";
-import { GoodDepth, MediumDepth, BadDepth, Default as defaultTire, Loading, SelectedTire, UnmountedTire } from "./Tire.stories";
+import { GoodDepth, MediumDepth, BadDepth, Default as defaultTire, Loading, SelectedTire, UnmountedTire, Children } from "./Tire.stories";
 import { TirePositions } from "../components/UnitLayout/ComponenteEje";
 
 export default {
@@ -16,7 +16,7 @@ export default {
       },
       tireVariant: {
         control: "select",
-        options: Object.keys(TireStyles),
+        options: [...Object.keys(TireStyles), "CHILDREN"],
         mapping: {
             MILIMETRAJE_BUENO: GoodDepth.args,
             MILIMETRAJE_MEDIO: MediumDepth.args,
@@ -25,6 +25,7 @@ export default {
             LLANTA_NO_MONTADA: UnmountedTire.args,
             BUSCANDO_LLANTA: Loading.args,
             LLANTA_SELECCIONADA: SelectedTire.args,
+            "CHILDREN": Children.args,
         }
       }
     },

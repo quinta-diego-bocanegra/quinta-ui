@@ -13,7 +13,7 @@ export default function ListItem ({icon, title, children, display = "col"}){
                 )
             }
             <div className={"flex-auto flex " + (display === "col" ? "flex-col gap-2" : "flex-row justify-between")}>
-                <p className={"font-uncut text-xs text-gray-400 leading-none " + (display == "row" && "pt-1")}>{title}</p>
+                <p className={"font-uncut text-xs text-gray-400 leading-none " + (display == "row" && "self-center")}>{title}</p>
                 {children}
             </div>
         </div>
@@ -21,9 +21,9 @@ export default function ListItem ({icon, title, children, display = "col"}){
 }
 
 
-export const ListItemValue = ({children, justify = "left"}) => {
+export const ListItemValue = ({children}) => {
     return (
-        <p className={" text-gray-600 leading-none " + (justify === "right" && "text-right")}>
+        <p className={" text-gray-600 leading-none w-fit "}>
             {children}
         </p>
     )

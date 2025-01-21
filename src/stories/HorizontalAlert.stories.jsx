@@ -15,7 +15,7 @@ export default {
     argTypes: {
         type: {
             control: "select",
-            options: ["error", "warning"]
+            options: ["error", "warning", "info"]
         },
         display: {
             control: "radio",
@@ -36,6 +36,23 @@ export const Error = {
     args: {
         type: "error",
         message: "Ocurrio un error, por favor intente de nuevo mas tarde"
+    }
+}
+
+export const Info = {
+    args: {
+        type: "info",
+        message: "Utilize el menu lateral para desplazarse mas rapido",
+        display: "col",
+        children: (
+            <ShadowButton
+                onClick={fn}
+                icon={faCheck}
+                type={"submit"}
+                iconColor={"text-blue-400"}>
+                Entendido
+            </ShadowButton>
+        )
     }
 }
 
@@ -64,4 +81,5 @@ export const WithChildren = {
             
     }
 }
+
 

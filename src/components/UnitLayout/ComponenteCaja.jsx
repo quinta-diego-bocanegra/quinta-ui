@@ -1,19 +1,14 @@
 import ComponenteEje from "./ComponenteEje.jsx"
 import ComponenteUnidad from "./ComponenteUnidad.jsx"
 import ComponenteLlanta from "./ComponenteLlanta.jsx"
+import SpareTire from "./SpareTire.jsx"
 import { UnitsTemplates } from "./ComponenteUnidad.jsx"
 
 let ComponenteCaja = ({variant = "TwoAxles", tires}) => {
 
 	return (
 		<ComponenteUnidad templateName={"CAJA SECA"} frame="long">
-			<svg viewBox="0 0 30.6 90" x={"-10%"}>
-                <svg viewBox="0 0 30.6 30.6">
-                    <g transform="rotate(270) translate(-30.6,0)">
-                        <ComponenteLlanta {...tires.SPARE_TIRE} />
-                    </g>
-                </svg> 
-            </svg>
+			<SpareTire position={"-10%"} tireProps={tires.SPARE_TIRE}/>
 			{
 				variant == "ThreeAxles" ? (
 					<>

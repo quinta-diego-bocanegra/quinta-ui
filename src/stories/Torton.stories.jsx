@@ -1,7 +1,7 @@
 import { TirePositions } from "../components/UnitLayout/ComponenteEje";
 import { TireStyles } from "../components/UnitLayout/ComponenteLlanta";
 import ComponenteTorton from "../components/UnitLayout/ComponenteTorton";
-import { GoodDepth, BadDepth, MediumDepth, Default as defaultTire, UnmountedTire, Loading, SelectedTire } from "./Tire.stories";
+import { GoodDepth, BadDepth, MediumDepth, Default as defaultTire, UnmountedTire, Loading, SelectedTire, Children } from "./Tire.stories";
 
 export default {
     title: 'UnitLayout/Torton',
@@ -12,7 +12,7 @@ export default {
     argTypes:{
       tireVariant: {
         control: "select",
-        options: Object.keys(TireStyles),
+        options: [...Object.keys(TireStyles), "CHILDREN"],
         mapping: {
             MILIMETRAJE_BUENO: GoodDepth.args,
             MILIMETRAJE_MEDIO: MediumDepth.args,
@@ -21,6 +21,7 @@ export default {
             LLANTA_NO_MONTADA: UnmountedTire.args,
             BUSCANDO_LLANTA: Loading.args,
             LLANTA_SELECCIONADA: SelectedTire.args,
+            "CHILDREN": Children.args,
         }
       }
     },

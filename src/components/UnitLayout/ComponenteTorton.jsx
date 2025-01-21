@@ -6,7 +6,7 @@ import SpareTire from "./SpareTire"
 export default function ComponenteTorton({tires}){
     return (
         <ComponenteUnidad templateName={"TORTON"} frame="long">
-            <SpareTire position={"-6.8%"} tireProps={tires.SPARE_TIRE} />
+            <SpareTire position={"-4%"} tireProps={tires.SPARE_TIRE} />
             <svg viewBox="0 0 27.54 90" x={AxlePositions.STEERING_AXLE}>
                 <ComponenteEje position={0}>
                     {tires.STEERING_AXLE.map(props => <ComponenteLlanta {...props}/>)}

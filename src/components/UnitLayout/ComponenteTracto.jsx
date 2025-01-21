@@ -2,17 +2,12 @@ import ComponenteUnidad from "./ComponenteUnidad"
 import { UnitsTemplates } from "./ComponenteUnidad"
 import ComponenteEje from "./ComponenteEje"
 import ComponenteLlanta from "./ComponenteLlanta"
+import SpareTire from "./SpareTire"
 
 export default function ComponenteTracto({tires, variant = "ThreeAxles"}){
     return (
         <ComponenteUnidad templateName={"TRACTOCAMION"}>
-            <svg viewBox="0 0 30.6 90">
-                <svg viewBox="0 0 30.6 30.6">
-                    <g transform="rotate(270) translate(-30.6,5.268)" >
-                        <ComponenteLlanta {...tires.SPARE_TIRE} />
-                    </g>
-                </svg> 
-            </svg>
+            <SpareTire position={"3.3%"} tireProps={tires.SPARE_TIRE}/>
             <ComponenteEje position={AxlePositions.STEERING_AXLE}>
                 {tires.STEERING_AXLE.map(props => <ComponenteLlanta {...props}/>)}
             </ComponenteEje>

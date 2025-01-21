@@ -2,6 +2,8 @@ import { fn } from '@storybook/test';
 
 import ShadowButton from '../components/ShadowButton';
 import { faSave } from '@fortawesome/free-solid-svg-icons/faSave';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
 export default {
   title: 'Buttons/ShadowButton',
@@ -28,8 +30,9 @@ export default {
 
 export const Default = {
   args: {
-    
+    className: "px-4"
   },
+  render: (args) => <ShadowButton {...args}/>
 };
 
 export const WithIcon = {
@@ -39,4 +42,26 @@ export const WithIcon = {
   },
 };
 
+export const RightIcon = {
+  args: {
+    children: "Continue",
+    icon: faArrowRight,
+    iconLocaton: "right"
+  }
+}
 
+export const OnlyIcon = {
+  args: {
+    icon: faSave,
+    children: null,
+  }
+}
+
+export const Long = {
+  args: {
+    children: "Select region...",
+    icon: faChevronDown,
+    iconLocaton: "right",
+    className: "w-48"
+  },
+}
