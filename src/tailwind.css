@@ -1,3 +1,122 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer base {
+  :root {
+    --radius: 0.5rem
+  }
+
+
+  @font-face {
+    font-family: 'Youth Black';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(/fonts/AllCaps\ -\ Youth\ Black.otf) format('opentype');
+  }
+
+  @font-face {
+    font-family: 'Uncut sans';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(/fonts/UncutSans-Bold.otf) format('opentype');
+  }
+
+  @font-face {
+    font-family: 'Esphimere';
+    font-style: normal;
+    font-weight: 100;
+    font-display: swap;
+    src: url(/fonts/esphimere/Esphimere-Thin.otf) format('opentype');
+      }
+
+  @font-face {
+      font-family: 'Esphimere';
+      font-style: italic;
+      font-weight: 100;
+      font-display: swap;
+      src: url(/fonts/esphimere/Esphimere-ThinItalic.otf) format('opentype');
+  }
+
+  @font-face {
+      font-family: 'Esphimere';
+      font-style: normal;
+      font-weight: 200;
+      font-display: swap;
+      src: url(/fonts/esphimere/Esphimere-ExtraLight.otf) format('opentype');
+  }
+
+  @font-face {
+      font-family: 'Esphimere';
+      font-style: italic;
+      font-weight: 200;
+      font-display: swap;
+      src: url(/fonts/esphimere/Esphimere-ExtraLightItalic.otf) format('opentype');
+  }
+
+  @font-face {
+      font-family: 'Esphimere';
+      font-style: normal;
+      font-weight: 300;
+      font-display: swap;
+      src: url(/fonts/esphimere/Esphimere-Light.otf) format('opentype');
+  }
+
+  @font-face {
+      font-family: 'Esphimere';
+      font-style: italic;
+      font-weight: 300;
+      font-display: swap;
+      src: url(/fonts/esphimere/Esphimere-LightItalic.otf) format('opentype');
+  }
+
+  @font-face {
+      font-family: 'Esphimere';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(/fonts/esphimere/Esphimere-Regular.otf) format('opentype');
+  }
+
+  @font-face {
+      font-family: 'Esphimere';
+      font-style: italic;
+      font-weight: 400;
+      font-display: swap;
+      src: url(/fonts/esphimere/Esphimere-Italic.otf) format('opentype');
+  }
+
+  @font-face {
+      font-family: 'Esphimere';
+      font-style: normal;
+      font-weight: 600;
+      font-display: swap;
+      src: url(/fonts/esphimere/Esphimere-SemiBold.otf) format('opentype');
+  }
+
+  @font-face {
+      font-family: 'Esphimere';
+      font-style: italic;
+      font-weight: 600;
+      font-display: swap;
+      src: url(/fonts/esphimere/Esphimere-SemiBoldItalic.otf) format('opentype');
+  }
+
+  @font-face {
+      font-family: 'Esphimere';
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: url(/fonts/esphimere/Esphimere-Bold.otf) format('opentype');
+  }
+
+  @font-face {
+      font-family: 'Esphimere';
+      font-style: italic;
+      font-weight: 700;
+      font-display: swap;
+      src: url(/fonts/esphimere/Esphimere-BoldItalic.otf) format('opentype');
+  }
+
+}
