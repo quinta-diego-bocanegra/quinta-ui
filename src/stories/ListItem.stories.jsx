@@ -33,7 +33,7 @@ export const Row = {
     icon: faScrewdriverWrench,
     title: "Maintenance",
     display: "row",
-    children: <ListItemValue justify="right">05/06</ListItemValue>,
+    children: <ListItemValue>05/06</ListItemValue>,
   },
   render: args => <div className="w-[360px] flex flex-col"><ListItem {...args}/></div>
 }
